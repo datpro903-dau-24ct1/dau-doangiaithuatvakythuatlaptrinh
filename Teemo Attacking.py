@@ -4,5 +4,4 @@ class Solution(object):
         for i in range(len(timeSeries)-1):
             d=timeSeries[i+1]-timeSeries[i]
             t+= min(d,duration)
-        return t+duration
-        
+        return t+duration      

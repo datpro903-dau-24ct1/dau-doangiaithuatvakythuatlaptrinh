@@ -5,6 +5,6 @@ class Solution(object):
             p.append((names[i],heights[i]))
         p.sort(key=lambda x: x[1], reverse=True)
         kq=[]
-        for name,height in p:
-            kq.append(name)
+        for p1 in p:
+            kq.append(p1[0])
         return kq
