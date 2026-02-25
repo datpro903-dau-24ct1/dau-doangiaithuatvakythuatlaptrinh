@@ -4,4 +4,4 @@ class Solution(object):
         if t < n:
             return t+1
         else:
-            return 2*(n-1)-t+1     
+            return 2*(n-1)-t+1
