@@ -10,7 +10,7 @@ class Solution(object):
         left = 1
         right = n
         while left <= right:
-            mid = (left + right) // 2
+            mid = left+(right-left) / 2
             if guess(mid) == 0:
                 return mid
             elif guess(mid) == -1:   
