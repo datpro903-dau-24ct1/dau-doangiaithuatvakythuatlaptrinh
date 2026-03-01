@@ -2,12 +2,9 @@ class Solution(object):
     def isAnagram(self, s, t):
         if len(s)!= len(t):
             return False
-        count={}
-        for c in s:
-            count[c]=count.get(c, 0) + 1
-        for c in t:
-            if c not in count or count[c] == 0:
-                return False
-            count[c] -= 1
-        return True
-        
+        ss=sorted(s)
+        st=sorted(t)
+        if ss==st:
+            return True
+        else:
+            return False
