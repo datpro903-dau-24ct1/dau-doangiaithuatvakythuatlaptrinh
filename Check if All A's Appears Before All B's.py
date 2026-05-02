@@ -6,5 +6,5 @@ class Solution(object):
                 if found:
                     return False
             else:
-                found = True
+                found = True    
         return True
